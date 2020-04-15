@@ -42,7 +42,7 @@
     "start": "npm run build && webpack-dev-server --config ./build-config/webpack.dev.main.js",
     "test": "karma start karma.conf.js",
     "prepublishOnly": "not-in-install && npm run build || in-install",
-    "upload-version": "npm run build && git add . && git commit -m \"Lazy update\" && git push"
+    "uv": "npm run build && git add . && git commit -m \"Lazy update\" && git push"
   },
   "files": [
     "dist/",
@@ -107,7 +107,6 @@
     "jasmine-core": "^3.5.0",
     "jsdoc": "^3.6.4",
     "jsonlint-cli": "^1.0.1",
-    "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage": "^2.0.1",
     "karma-coveralls": "^2.1.0",
