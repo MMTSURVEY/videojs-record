@@ -41,7 +41,8 @@
     "lint:html": "htmlhint examples",
     "start": "npm run build && webpack-dev-server --config ./build-config/webpack.dev.main.js",
     "test": "karma start karma.conf.js",
-    "prepublishOnly": "not-in-install && npm run build || in-install"
+    "prepublishOnly": "not-in-install && npm run build || in-install",
+    "upload-version": "npm run build && git add . && git commit -m \"Lazy update\" && git push"
   },
   "files": [
     "dist/",
