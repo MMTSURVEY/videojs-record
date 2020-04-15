@@ -72,6 +72,7 @@ class RecordToggle extends Button {
     handleClick(event) {
         let recorder = this.player_.record();
         if (!recorder.isRecording()) {
+            console.log('hi haaaaaaaaaaaaaaaaaa')
             recorder.start();
         } else {
             recorder.stop();
