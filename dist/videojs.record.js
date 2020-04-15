@@ -549,7 +549,7 @@ eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/he
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Applications/MAMP/htdocs/videojs-record/src/js/videojs.record.js */\"./src/js/videojs.record.js\");\nmodule.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/videojs-record/src/css/videojs.record.scss */\"./src/css/videojs.record.scss\");\n\n\n//# sourceURL=webpack://VideojsRecord/multi_./src/js/videojs.record.js_./src/css/videojs.record.scss?");
+eval("__webpack_require__(/*! C:\\Users\\Paulin\\Desktop\\videojs-record\\src\\js\\videojs.record.js */\"./src/js/videojs.record.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Paulin\\Desktop\\videojs-record\\src\\css\\videojs.record.scss */\"./src/css/videojs.record.scss\");\n\n\n//# sourceURL=webpack://VideojsRecord/multi_./src/js/videojs.record.js_./src/css/videojs.record.scss?");
 
 /***/ }),
 
