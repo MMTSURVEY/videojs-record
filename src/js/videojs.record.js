@@ -67,7 +67,7 @@ class Record extends Plugin {
         this.resetState();
 
         // add device button with icon based on type
-        let deviceIcon = 'av-perm';
+        let deviceIcon = 'video-perm';
 
         switch (this.getRecordType()) {
             case IMAGE_ONLY:
