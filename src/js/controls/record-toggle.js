@@ -15,7 +15,7 @@ const Component = videojs.getComponent('Component');
  *
  * @class
  * @augments videojs.Button
-*/
+ */
 class RecordToggle extends Button {
     /**
      * Builds the default DOM `className`.
@@ -69,11 +69,22 @@ class RecordToggle extends Button {
      * @listens tap
      * @listens click
      */
+
+
     handleClick(event) {
         let recorder = this.player_.record();
+        let timer = 3;
         if (!recorder.isRecording()) {
-            console.log('test')
-            recorder.start();
+            const countdown = setInterval(() => {
+                if (timer <= 0) {
+                    clearInterval(countdown);
+                    document.getElementById("countdown").innerHTML = "Finished";
+                    recorder.start();
+                } else {
+                    document.getElementById("countdown").innerHTML = timer + " seconds remaining";
+                }
+                timer -= 1;
+            }, 1000);
         } else {
             recorder.stop();
         }
