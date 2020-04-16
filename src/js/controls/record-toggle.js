@@ -78,7 +78,7 @@ class RecordToggle extends Button {
             const countdown = setInterval(() => {
                 if (timer <= 0) {
                     clearInterval(countdown);
-                    document.getElementById("countdown").innerHTML = "Finished";
+                    document.getElementById("countdown").innerHTML = "";
                     recorder.start();
                 } else {
                     document.getElementById("countdown").innerHTML = timer + " seconds remaining";
