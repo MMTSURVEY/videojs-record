@@ -81,7 +81,7 @@ class RecordToggle extends Button {
                     document.getElementById("countdown").innerHTML = "";
                     recorder.start();
                 } else {
-                    document.getElementById("countdown").innerHTML = timer + " seconds remaining";
+                    document.getElementById("countdown").innerHTML = "L'enregistrement commencera dans : " + timer;
                 }
                 timer -= 1;
             }, 1000);
