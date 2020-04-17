@@ -74,6 +74,7 @@ class RecordToggle extends Button {
     handleClick(event) {
         let recorder = this.player_.record();
         let timer = 5;
+        recorder.player.trigger('onClickStartButton')
         if (!recorder.isRecording()) {
             const countdown = setInterval(() => {
                 if (timer <= 0) {
