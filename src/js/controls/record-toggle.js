@@ -73,7 +73,7 @@ class RecordToggle extends Button {
 
     handleClick(event) {
         let recorder = this.player_.record();
-        let timer = 3;
+        let timer = 5;
         if (!recorder.isRecording()) {
             const countdown = setInterval(() => {
                 if (timer <= 0) {
@@ -81,7 +81,7 @@ class RecordToggle extends Button {
                     document.getElementById("countdown").innerHTML = "";
                     recorder.start();
                 } else {
-                    document.getElementById("countdown").innerHTML = "L'enregistrement commencera dans : " + timer;
+                    document.getElementById("countdown").innerHTML = timer;
                 }
                 timer -= 1;
             }, 1000);
