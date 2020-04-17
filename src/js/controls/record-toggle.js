@@ -73,6 +73,9 @@ class RecordToggle extends Button {
 
     handleClick(event) {
         let recorder = this.player_.record();
+        recorder.player.trigger('onClickStartButton');
+        /* Doing some testing to export these actions
+        let recorder = this.player_.record();
         let timer = 5;
         recorder.player.trigger('onClickStartButton')
         if (!recorder.isRecording()) {
@@ -89,6 +92,7 @@ class RecordToggle extends Button {
         } else {
             recorder.stop();
         }
+        */
     }
 
     /**
